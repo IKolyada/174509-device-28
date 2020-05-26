@@ -9,7 +9,7 @@
 <body>
   <header>
     <nav>
-      <a href="/"><img src="img/logo-black.svg" width="163" height="34" alt="Логотип магазина Device"></a>
+      <a href="/"><img src="img/svg/logo-device.svg" width="163" height="34" alt="Логотип магазина Device"></a>
       <!--Здесь будет поиск по сайту-->
       <ul>
         <li><a href="account.html">Валентин Петухов</a> <button type="button">Выйти</button></li>
@@ -32,66 +32,83 @@
       <li><a>Моноподы для селфи</a></li>
     </ul>
     <section>
-      <h2>Фильтр</h2>
-      <p>Стоимость</p>
-      <!--Здесь будет фильтр стоимости-->
-      <p>Цвет</p>
-      <!--Здесь будут чекбоксы для фильтра-->
-      <p>Bluetooth</p>
-      <!--Здесь будут инпуты для фильтра-->
-      <button type="button">Показать</button>
-    </section>
-    <section>
-      <h2>Товары</h2>
-      <h2>Сортировка:</h2>
-      <ul>
-        <li><button type="button">По цене</button></li>
-        <li><button type="button">По типу</button></li>
-        <li><button type="button">По популярности</button></li>
-        <img src="img/svg/icon-up-dir.svg" alt="Отсортировать по убыванию">
-        <img src="img/svg/icon-down-dir.svg" alt="Отсортировать по возрастанию">
-      </ul>
-      <ul>
-        <li>
-          <a href="product.html">
-            <img src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></a>
-          <h3><a href="product.html">Любительская селфи-палка</a></h3>
-
-          <p>500 руб.</p>
-        </li>
-        <li>
-          <a href="product.html">
-            <img src="img/product/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380"></a>
-          <h3><a href="product.html">Профессиональная селфи-палка</a></h3>
-          <p>1 500 руб.</p>
-        </li>
-        <li>
-          <img src="img/product/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380"></a>
-          <h3><a href="product.html">Непотопляемая селфи-палка</a></h3>
-          <p>2 500 руб.</p>
-        </li>
-        <li>
-          <a href="product.html">
-            <img src="img/product/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380"></a>
-          <h3><a href="product.html">Селфи-палка «Следуй за мной»</a></h3>
-          <p>4 900 руб.</p>
-        </li>
-      </ul>
       <div>
-        <a>Назад</a>
-        <ul>
-          <li>
-            <a>1</a>
-          </li>
-          <li>
-            <a>2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-        </ul>
-        <a href="#">Вперед</a>
+        <aside>
+          <h2>Фильтр:</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>Стоимость</legend>
+              <input type="range" multiple min="0" step="1" max="10000">
+              <p>От 0</p>
+              <p>До 5000</p>
+            </fieldset>
+            <fieldset>
+                <legend>Цвет</legend>
+              <!--Здесь будут чекбоксы для фильтра-->
+            </fieldset>
+            <fieldset>
+                <legend>Bluetooth</legend>
+              <!--Здесь будут инпуты для фильтра-->
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+        </aside>
+        <section>
+          <h2>Товары</h2>
+          <h2>Сортировка:</h2>
+          <ul>
+            <!--?Инпуты?-->
+            <li><a href="filter-price.html" aria-label="Отсортировать список товаров по цене">По цене</a></li>
+            <li><a href="filter-type.html" aria-label="Отсортировать список товаров по типу">По типу</a></li>
+            <li><a href="filter-popular.html" aria-label="Отсортировать список товаров по популярности">По
+                популярности</a></li>
+            <li><a href="" aria-label="Отсортировать по убыванию"></a></li>
+            <li><a href="" aria-label="Отсортировать по возрастанию"></a></li>
+          </ul>
+          <ul>
+            <li>
+              <a href="product.html">
+                <img src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380"></a>
+              <h3><a href="product.html">Любительская селфи-палка</a></h3>
+
+              <p>500 руб.</p>
+            </li>
+            <li>
+              <a href="product.html">
+                <img src="img/product/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380"></a>
+              <h3><a href="product.html">Профессиональная селфи-палка</a></h3>
+              <p>1 500 руб.</p>
+            </li>
+            <li>
+              <img src="img/product/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380"></a>
+              <h3><a href="product.html">Непотопляемая селфи-палка</a></h3>
+              <p>2 500 руб.</p>
+            </li>
+            <li>
+
+              <a href="product.html"><img src="img/product/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360"
+                  height="380"></a>
+              <h3><a href="product.html">Селфи-палка «Следуй за мной»</a></h3>
+              <p>4 900 руб.</p>
+            </li>
+          </ul>
+          <div>
+            <a>Назад</a>
+            <ol>
+              <li>
+                <a></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Перейти на вторую страницу каталога"></a>
+              </li>
+              <li>
+                <a href="#" aria-label="Перейти на третью страницу каталога"></a>
+              </li>
+            </ol>
+            <a href="#" aria-label="Перейти на следующую страницу каталога">Вперед</a>
+          </div>
       </div>
+    </section>
     </section>
 
   </main>
