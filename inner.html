@@ -9,25 +9,30 @@
 <body>
   <header>
     <nav>
-      <a href="/"><img src="img/svg/logo-device.svg" width="163" height="34" alt="Логотип магазина Device"></a>
-      <!--Здесь будет поиск по сайту-->
+      <a href="/" aria-label="На главную страницу"><img src="img/svg/logo-device.svg" width="163" height="34"
+          alt="Логотип магазина Device"></a>
+      <form action="https://echo.htmlacademy.ru" method="post"></form>
+      <label for="search" class="visually-hidden">Поиск по сайту</label>
+      <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+      <input type="submit" value="Найти">
+      </form>
       <ul>
-        <li><a href="account.html"><img src="img/svg/user.svg" alt=""> Инна Коляда</a> <button
-            type="button">Выйти</button></li>
+        <li><a href="account.html"><img src="img/svg/user.svg" alt="Пользователь">Инна Коляда</a>
+          <button type="button">Выйти</button></li>
         <li><a href="compare.html"><img src="img/svg/compare.svg" alt="">Сравнить</a></li>
-        <li><a href="basket.html"><img src="img/svg/user.svg" alt="">Корзина</a></li>
+        <li><a href="basket.html"><img src="img/svg/cart.svg" alt="">Корзина</a></li>
       </ul>
       <ul>
         <li><a href="">Каталог товаров</a>
-            <ul>
-                <li><a href="category-1.html">Виртуальная реальность</a></li>
-                <li><a href="category-2.html">Моноподы для селфи</a></li>
-                <li><a href="category-3.html">Экшн-камеры</a></li>
-                <li><a href="category-4.html">Фитнес-браслеты</a></li>
-                <li><a href="category-5.html">Умные часы</a></li>
-                <li><a href="category-6.html">Квадрокоптер</a></li>
-              </ul>
-            </li>
+          <ul>
+            <li><a href="inner.html">Виртуальная реальность</a></li>
+            <li><a href="inner.html">Моноподы для селфи</a></li>
+            <li><a href="inner.html">Экшн-камеры</a></li>
+            <li><a href="inner.html">Фитнес-браслеты</a></li>
+            <li><a href="inner.html">Умные часы</a></li>
+            <li><a href="inner.html">Квадрокоптер</a></li>
+          </ul>
+        </li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contacts.html">Контакты</a></li>
@@ -54,27 +59,55 @@
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
-              <!--Здесь будут чекбоксы для фильтра-->
+              <ul>
+                <li>
+                  <input type="checkbox" name="black" id="filter-color-black" checked>
+                  <label for="filter-color-black">Черный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="white" id="filter-color-white">
+                  <label for="filter-color-white">Белый</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="blue" id="filter-color-blue" checked>
+                  <label for="filter-color-blue">Синий</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="red" id="filter-color-red" checked>
+                  <label for="filter-color-red">Красный</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="pink" id="filter-color-pink">
+                  <label for="filter-color-pink">Розовый</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset>
               <legend>Bluetooth</legend>
-              <!--Здесь будут инпуты для фильтра-->
+              <ul>
+                <li>
+                  <input type="radio" name="bluetooth" id="filter-bluetooth-yes" value="bluetooth-yes">
+                  <label for="filter-bluetooth-yes">Есть</label>
+                </li>
+                <li>
+                  <input type="radio" name="bluetooth" id="filter-bluetooth-no" value="bluetooth-no">
+                  <label for="filter-bluetooth-no">Нет</label>
+                </li>
+              </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
         </aside>
         <section>
-          <h2>Товары</h2>
           <h2>Сортировка:</h2>
           <ul>
-            <!--?Инпуты?-->
-            <li><a href="filter-price.html" aria-label="Отсортировать список товаров по цене">По цене</a></li>
-            <li><a href="filter-type.html" aria-label="Отсортировать список товаров по типу">По типу</a></li>
-            <li><a href="filter-popular.html" aria-label="Отсортировать список товаров по популярности">По
-                популярности</a></li>
-            <li><a href="" aria-label="Отсортировать по убыванию"></a></li>
-            <li><a href="" aria-label="Отсортировать по возрастанию"></a></li>
+            <li><a href="filter-price.html">По цене</a></li>
+            <li><a href="filter-type.html">По типу</a></li>
+            <li><a href="filter-popular.html">По популярности</a></li>
+            <li><a href=""><img src="img/svg/icon-up-dir.svg" alt="Отсортировать по убыванию"></a></li>
+            <li><a href=""><img src="img/svg/icon-down-dir.svg" alt="Отсортировать по возрастанию"></a></li>
           </ul>
+          <h2 class="visually-hidden">Список моноподов для селфи</h2>
           <ul>
             <li>
               <div>
@@ -115,9 +148,9 @@
           </ul>
           <div>
             <a>Назад</a>
-            <ol>
+            <ul>
               <li>
-                <a>1</a>
+                <a aria-label="Вы находитесь на первой странице каталога">1</a>
               </li>
               <li>
                 <a href="#" aria-label="Перейти на вторую страницу каталога">2</a>
@@ -125,7 +158,7 @@
               <li>
                 <a href="#" aria-label="Перейти на третью страницу каталога">3</a>
               </li>
-            </ol>
+            </ul>
             <a href="#" aria-label="Перейти на следующую страницу каталога">Вперед</a>
           </div>
       </div>
@@ -133,12 +166,12 @@
     </section>
   </main>
   <footer>
-    <nav><a href=""><img src="img/logo-device.svg" alt="Логотип магазина Device"></a>
+    <nav><a href=""><img width="163" height="35" src="img/svg/logo-device.svg" alt="Логотип магазина Device"></a>
       <ul>
         <li><a href="account.html"><img src="img/svg/user.svg" alt=""> Инна Коляда</a> <button
             type="button">Выйти</button></li>
         <li><a href="compare.html"><img src="img/svg/compare.svg" alt="">Сравнить</a></li>
-        <li><a href="basket.html"><img src="img/svg/user.svg" alt="">Корзина</a></li>
+        <li><a href="basket.html"><img src="img/svg/cart.svg" alt="">Корзина</a></li>
       </ul>
       <ul>
         <li><a href="delivery.html">Доставка</a></li>
@@ -149,15 +182,16 @@
     <p>г. Москва, ул. Строителей, 15</p>
     <p>Тел.: <a href="tel:+7495495-95-95">+7 (495) 495-95-95</a></p>
     <section>
-      <h2>Подписывайтейсь на наши группы в социальных сетях</h2>
+      <h2 class="visually-hidden">Подписывайтейсь на наши группы в социальных сетях</h2>
       <ul>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
-        <li><a href="#">Твиттер</a></li>
+        <li><a href="#"><img src="img/svg/fb.svg" alt="Наша страница на Facebook"></a></li>
+        <li><a href="#"><img src="img/svg/instagram.svg" alt="Наша страница в Instagram"></a></li>
+        <li><a href="#"><img src="img/svg/twitter.svg" alt="Наша страница в Twitter"></a></li>
       </ul>
     </section>
-    <a href="https://htmlacademy.ru"><img src="img/logo-html.svg" alt="Онлайн‑курс
+    <a href="https://htmlacademy.ru"><img src="img/svg/logo-html.svg" alt="Онлайн‑курс
         HTML и CSS. Профессиональная вёрстка сайтов"></a>
   </footer>
 </body>
+
 </html>
