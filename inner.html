@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс / страница каталога товаров</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -53,9 +55,16 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Стоимость</legend>
-              <input type="range" multiple min="0" step="1" max="10000">
-              <p>От 0</p>
-              <p>До 5000</p>
+              <div>
+                  <input type="text" name="min-price" id="min-price">
+                  <label for="min-price">От 0</label>
+                  <button type="button"></button>
+              </div>
+              <div>
+                <input type="text" name="max-price" id="max-price">
+                <label for="max-price">До 5000</label>
+                <button type="button"></button>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
@@ -161,8 +170,9 @@
             </ul>
             <a href="#" aria-label="Перейти на следующую страницу каталога">Вперед</a>
           </div>
-      </div>
+      
     </section>
+        </div>
     </section>
   </main>
   <footer>

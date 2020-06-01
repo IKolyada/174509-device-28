@@ -1,0 +1,42 @@
+/* Variables */
+
+:root {
+   --basic-black: #000;
+   --basic-dark: #363636;
+   --basic-grey: #464646;
+   --basic-half-grey: #7e7e7e;
+   --basic-grey-light: #e5e5e5;
+   --basic-white: #fff;
+
+   --special-yellow-dark: #f0c52e;
+   --special-yellow-light: #f7e296;
+   --special-green: #91c92f;
+
+   --warning: #f6dada;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+         url('../fonts/open-sans-v17-cyrillic-300.woff2') format('woff2'),
+         url('../fonts/open-sans-v17-cyrillic-300.woff') format('woff'),
+  }
+
+  /* Global */
+
+  body {
+      min-width: 1180px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 28px;
+      color: var(--basic-black);
+      background-color: var(--basic-white);
+  }
+
+  a {
+      text-decoration: none;
+  }
