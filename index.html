@@ -11,7 +11,6 @@
 
 <body class="page-body">
   <header class="wrapper header">
-
     <nav class="header-nav">
       <a class="logo"><img width="163" height="34" src="img/svg/logo-device.svg" alt="Логотип магазина Device"></a>
       <div class="navigation-header">
@@ -23,10 +22,10 @@
         <ul class="menu user-navigation">
           <li class="user-nav-enter"><a class="navigation-link nav-link-enter" href="#">Войти</a></li>
           <li><a class="navigation-link nav-link-compare" href="#">Сравнить</a></li>
-          <li><a class="navigation-link nav-link-basket" href="#">Корзина</a></li>
+          <li class="user-nav-basket"><a class="navigation-link nav-link-basket" href="#">Корзина</a></li>
         </ul>
       </div>
-      <ul class="main-menu">
+      <ul class="navigation">
         <li class="item-catalog"><a class="navigation-link" href="#">Каталог товаров</a>
           <ul class="menu submenu-category visually-hidden">
             <li class="dropdown"><a class="navigation-link" href="inner.html">Виртуальная реальность</a></li>
@@ -43,7 +42,7 @@
       </ul>
     </nav>
     <section class="slider">
-      <article class="slide">
+      <article class="slide ">
         <div class="slide-img">
           <img width="384" height="486" src="img/slider/slider-1.png" alt="Самая длинная палка для селфи">
         </div>
@@ -60,7 +59,9 @@
         </div>
       </article>
       <article class="slide visually-hidden">
-        <img width="345" height="485" src="img/slider/slider-2.png" alt="Фитнес-браслет">
+        <div class="slide-img">
+          <img width="345" height="485" src="img/slider/slider-2.png" alt="Фитнес-браслет">
+        </div>
         <div class="slide-content">
           <p class="slider-title">Худеем правильно!</p>
           <p class="slider-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и
@@ -73,7 +74,9 @@
         </div>
       </article>
       <article class="slide visually-hidden">
-        <img width="526" height="334" src="img/slider/slider-3.png" alt="Квадрокоптер с лазером">
+        <div class="slide-img">
+          <img width="526" height="334" src="img/slider/slider-3.png" alt="Квадрокоптер с лазером">
+        </div>
         <div class="slide-content">
           <p class="slider-title">Порхает как бабочка, жалит как пчела!</p>
           <p class="slider-text">Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -196,7 +199,6 @@
       </section>
     </div>
   </main>
-
   <footer class="footer">
     <div class="wrapper footer-grid">
 
@@ -205,19 +207,19 @@
           <path fill="#F0C52E"
             d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
         </svg></a>
-      <nav class="footer-grid-2">
+      <nav class="footer-grid-nav">
         <ul class="user-navigation menu">
-          <li><a class="user-navigation-footer" href="#">Войти</a></li>
-          <li><a class="user-navigation-footer" href="#">Сравнить</a></li>
-          <li><a class="user-navigation-footer" href="#">Корзина</a></li>
+          <li class="user-nav-footer"><a class="user-navigation-footer" href="#">Войти</a></li>
+          <li class="user-nav-footer"><a class="user-navigation-footer" href="#">Сравнить</a></li>
+          <li class="user-nav-footer"><a class="user-navigation-footer" href="#">Корзина</a></li>
         </ul>
       </nav>
-      <p class="regular-text footer-text footer-grid-3">г. Москва, ул. Строителей, 15</p>
+      <p class="regular-text footer-text footer-grid-address">г. Москва, ул. Строителей, 15</p>
       <nav>
-        <ul class="main-menu">
-          <li><a class="footer-main-menu" href="#">Доставка</a></li>
-          <li><a class="footer-main-menu" href="#">Гарантия</a></li>
-          <li><a class="footer-main-menu" href="#">Контакты</a></li>
+        <ul class="navigation">
+          <li class="navigation-item"><a class="footer-navigation" href="#">Доставка</a></li>
+          <li class="navigation-item"><a class="footer-navigation" href="#">Гарантия</a></li>
+          <li class="navigation-item"><a class="footer-navigation" href="#">Контакты</a></li>
         </ul>
       </nav>
       <p class="regular-text footer-text phone">Тел.: <a class="regular-text" href="tel:+7495495-95-95">+7 (495)
@@ -236,8 +238,6 @@
       </div>
     </div>
   </footer>
-
-
   <section class="visually-hidden">
     <h2 class="visually-hidden">Форма обратной связи</h2>
     <button class="modal-close" type="button"><img src="img/svg/modal-close.svg"
