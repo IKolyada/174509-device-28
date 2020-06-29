@@ -11,7 +11,8 @@
 <body class="page-body">
   <header class="wrapper header">
     <nav class="header-nav header-nav-inner">
-      <a class="logo"><img width="163" height="34" src="img/svg/logo-device.svg" alt="Логотип магазина Device"></a>
+      <a href="/" class="logo"><img width="163" height="34" src="img/svg/logo-device.svg"
+          alt="Логотип магазина Device"></a>
       <div class="navigation-header">
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <input type="search" class="header-search search-text" name="search" id="search">
@@ -26,7 +27,7 @@
         </ul>
       </div>
       <ul class="navigation">
-        <li class="item-catalog"><a class="navigation-link catalog-dropdown" href="#">Каталог товаров</a>
+        <li class="item-catalog"><a class="navigation-link catalog-dropdown nav-list" href="#">Каталог товаров</a>
           <ul class="menu submenu-category visually-hidden">
             <li class="dropdown"><a class="navigation-link" href="inner.html">Виртуальная реальность</a></li>
             <li class="dropdown"><a class="navigation-link" href="inner.html">Моноподы для селфи</a></li>
@@ -37,9 +38,9 @@
             <li class="dropdown"><a class="navigation-link" href="inner.html">Квадрокоптер</a></li>
           </ul>
         </li>
-        <li><a class="navigation-link" href="#">Доставка</a></li>
-        <li class="item-garanty"><a class="navigation-link" href="#">Гарантия</a></li>
-        <li class="item-contacts"><a class="navigation-link" href="#">Контакты</a></li>
+        <li class="item-delivery"><a class="navigation-link nav-list" href="#">Доставка</a></li>
+        <li class="item-garanty"><a class="navigation-link nav-list" href="#">Гарантия</a></li>
+        <li class="item-contacts"><a class="navigation-link nav-list" href="#">Контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -67,13 +68,13 @@
                 </div>
                 <div class="toggle min" style="left: 0%">
                   <button class="range-btn" type="button"></button>
-                  <label class="range-text">От
+                  <label class="range-text">от
                     <input class="range-text range-price" type="number" name="min-price" id="min-price"
                       placeholder="0"></label>
                 </div>
                 <div class="toggle max" style="left: 47%">
                   <button class="range-btn" type="button"></button>
-                  <label class="range-text max-price">До
+                  <label class="range-text max-price">до
                     <input class="range-text range-price" type="number" name="max-price" id="max-price"
                       placeholder="5000"></label>
                 </div>
@@ -149,7 +150,6 @@
                   <button class="button button-basket" type="button">В корзину</button>
                   <a class="compare" href="#">Добавить к сравнению</a>
                 </div>
-
                 <img class="item-image" src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360"
                   height="380">
               </div>
@@ -239,9 +239,9 @@
       <p class="regular-text footer-text footer-grid-address">г. Москва, ул. Строителей, 15</p>
       <nav>
         <ul class="navigation">
-          <li class="navigation-item"><a class="footer-navigation" href="#">Доставка</a></li>
-          <li class="navigation-item"><a class="footer-navigation" href="#">Гарантия</a></li>
-          <li class="navigation-item"><a class="footer-navigation" href="#">Контакты</a></li>
+          <li class="navigation-item"><a class="footer-navigation nav-list" href="#">Доставка</a></li>
+          <li class="navigation-item"><a class="footer-navigation nav-list" href="#">Гарантия</a></li>
+          <li class="navigation-item"><a class="footer-navigation nav-list" href="#">Контакты</a></li>
         </ul>
       </nav>
       <p class="regular-text footer-text phone">Тел.: <a class="regular-text footer-text" href="tel:+7495495-95-95">+7
@@ -261,6 +261,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
