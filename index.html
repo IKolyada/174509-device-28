@@ -16,12 +16,13 @@
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
           <input type="search" class="header-search search-text" name="search" id="search">
           <label class="search-text search-label" for="search">Поиск по сайту</label>
-          <button class="search-button search-text" type="submit">Найти</button>
+          <button tabindex="0" class="search-button search-text" type="submit">Найти</button>
         </form>
         <ul class="menu user-navigation">
           <li class="user-nav-enter"><a class="navigation-link nav-link-enter" href="#">Войти</a></li>
           <li class="user-nav-compare"><a class="navigation-link nav-link-compare" href="#">Сравнить</a></li>
           <li class="user-nav-basket"><a class="navigation-link nav-link-basket" href="#">Корзина</a></li>
+
         </ul>
       </div>
       <ul class="navigation">
@@ -42,7 +43,7 @@
       </ul>
     </nav>
     <section class="slider">
-      <article class="slide visually-hidden">
+      <article class="slide ">
         <div class="slide-img">
           <img width="384" height="486" src="img/slider/slider-1.png" alt="Самая длинная палка для селфи">
         </div>
@@ -60,7 +61,7 @@
           </ul>
         </div>
       </article>
-      <article class="slide ">
+      <article class="slide visually-hidden">
         <div class="slide-img">
           <img width="345" height="485" src="img/slider/slider-2.png" alt="Фитнес-браслет">
         </div>
@@ -131,6 +132,7 @@
           <a class="popular-link quadro" href="inner.html">
             Квадрокоптеры</a>
         </li>
+
       </ul>
     </section>
     <section class="service">
@@ -201,6 +203,7 @@
         <p class="regular-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
           проверить работоспособность покупки. Всякое бывает.</p>
         <div class="map">
+          <button class="button-map">Увеличить карту</button>
           <iframe src="https://yandex.ru/map-widget/v1/-/CCQhuMbqgB" width="560" height="222" frameborder="0"
             allowfullscreen="true"></iframe>
         </div>
@@ -224,7 +227,7 @@
         </ul>
       </nav>
       <p class="regular-text footer-text footer-grid-address">г. Москва, ул. Строителей, 15</p>
-      <nav>
+      <nav class="footer-menu">
         <ul class="navigation">
           <li class="navigation-item"><a class="footer-navigation nav-list" href="#">Доставка</a></li>
           <li class="navigation-item"><a class="footer-navigation nav-list" href="#">Гарантия</a></li>
@@ -248,7 +251,7 @@
       </div>
     </div>
   </footer>
-  <section class="modal visually-hidden">
+  <section class="modal modal-feedback hide">
     <div class="modal-box">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <button class="modal-close" type="button"><img src="img/svg/modal-close.svg"
@@ -256,23 +259,22 @@
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal-input">
           <label class="modal-label" for="name">Ваше имя:</label>
-          <input class="modal-text user-data" type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+          <input class="modal-text user-data name" type="text" id="name" name="name" placeholder="Имя Фамилия">
         </div>
         <div class="modal-input">
           <label class="modal-label" for="email">Ваш e-mail:</label>
-          <input class="modal-text user-data" type="email" id="email" name="email" placeholder="email@example.com"
-            required>
+          <input class="modal-text user-data email" type="text" id="email" name="email" placeholder="email@example.com">
         </div>
         <div class="modal-textarea">
           <label class="modal-label" for="message">Текст письма</label>
-          <textarea class="modal-text user-message" name="message" id="message" rows="9" placeholder="В свободной форме"
-            required></textarea>
+          <textarea class="modal-text user-message" name="message" id="message" rows="9"
+            placeholder="В свободной форме"></textarea>
         </div>
         <button class="button button-modal" type="submit">Отправить</button>
       </form>
     </div>
   </section>
-  <section class="modal visually-hidden">
+  <section class="modal modal-map hide">
     <div class="modal-box">
       <h2 class="visually-hidden">Интерактивная карта</h2>
       <button class="modal-close" type="button"><img src="img/svg/modal-close.svg" alt="Закрыть карту"></button>
