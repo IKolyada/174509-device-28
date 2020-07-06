@@ -966,6 +966,10 @@ img {
   outline: none;
 }
 
+.map-frame {
+  border: 0;
+}
+
 /* Catalog */
 
 .catalog-container {
