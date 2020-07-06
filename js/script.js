@@ -37,7 +37,6 @@ if (storage) {
 } else {
     userName.focus();
 }
-  }
 
 
 modalForm.addEventListener('submit', function (evt) {
