@@ -331,7 +331,7 @@ img {
 }
 
 .nav-list {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 /* Header */
@@ -824,7 +824,8 @@ img {
   padding-left: 117px;
   display: none;
   background-repeat: no-repeat;
-  background-position: right 60px;
+  background-position: right 72px;
+  width: 100%;
 }
 
 .service-text {
@@ -898,7 +899,6 @@ img {
 
 .about-us {
   width: 560px;
-  padding-right: 122px;
 }
 
 .delivery-list {
@@ -953,16 +953,6 @@ img {
 
 .button-map {
   cursor: pointer;
-  position: absolute;
-  bottom: 15px;
-  left: 8px;
-  font: inherit;
-  background-color: var(--basic-white);
-  border: none;
-  width: 200px;
-  font-weight: 800;
-  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-  border-radius: 2px;
   outline: none;
 }
 
@@ -1260,7 +1250,7 @@ img {
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
-  letter-spacing: .2px;
+  letter-spacing: 1px;
   white-space: nowrap;
 }
 
@@ -1271,6 +1261,7 @@ img {
   display: grid;
   grid-template-rows: 1fr 80px 1fr;
   grid-template-columns: 1fr 200px 1fr;
+  position: relative;
 }
 
 .item-img-box:hover .item-img-link {
@@ -1281,6 +1272,26 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.new::before {
+  content: 'new';
+  position: absolute;
+  top: 29px;
+  right: 27px;
+  z-index: 5;
+  width: 62px;
+  height: 62px;
+  font-size: 12px;
+  font-weight: 800;
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-image {
@@ -1471,8 +1482,8 @@ footer .regular-text {
 /* Modal form */
 
 .modal {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
