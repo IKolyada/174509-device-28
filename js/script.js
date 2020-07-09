@@ -55,7 +55,6 @@ modalForm.addEventListener('submit', function (evt) {
     localStorage.setItem("e-mail", userEmail.value);
 });
 
-
 //map
 
 let map = document.querySelector('.button-map');

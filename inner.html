@@ -11,7 +11,7 @@
 <body class="page-body">
   <header class="wrapper header">
     <nav class="header-nav header-nav-inner">
-      <a href="/" class="logo"><img width="163" height="34" src="img/svg/logo-device.svg"
+      <a href="index.html" class="logo"><img width="163" height="34" src="img/svg/logo-device.svg"
           alt="Логотип магазина Device"></a>
       <div class="navigation-header">
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
@@ -28,7 +28,7 @@
       </div>
       <ul class="navigation">
         <li class="item-catalog"><a class="navigation-link catalog-dropdown nav-list" href="#">Каталог товаров</a>
-          <ul class="menu submenu-category visually-hidden">
+          <ul class="menu submenu-category">
             <li class="dropdown"><a class="navigation-link" href="inner.html">Виртуальная реальность</a></li>
             <li class="dropdown"><a class="navigation-link" href="inner.html">Моноподы для селфи</a></li>
             <li class="dropdown"><a class="navigation-link" href="inner.html">Экшн-камеры</a></li>
@@ -48,7 +48,7 @@
     <div class="wrapper">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
-        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="/">Главная</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-item"><a class="breadcrumbs-link">Моноподы для селфи</a></li>
       </ul>
@@ -67,13 +67,13 @@
                   <div class="bar" style="width: 47%; margin-left: 0%"></div>
                 </div>
                 <div class="toggle min" style="left: 0%">
-                  <button class="range-btn" type="button"></button>
+                  <button class="range-btn" type="button" aria-label="Минимальная стоимость"></button>
                   <label class="range-text">от
                     <input class="range-text range-price" type="number" name="min-price" id="min-price"
                       placeholder="0"></label>
                 </div>
                 <div class="toggle max" style="left: 47%">
-                  <button class="range-btn" type="button"></button>
+                  <button class="range-btn" type="button" aria-label="Максимальная стоимость"></button>
                   <label class="range-text max-price">до
                     <input class="range-text range-price" type="number" name="max-price" id="max-price"
                       placeholder="5000"></label>
@@ -136,8 +136,8 @@
               </li>
               <li class="sorting-item"><a class="sorting-link" href="filter-type.html">По типу</a></li>
               <li class="sorting-item"><a class="sorting-link" href="filter-popular.html">По популярности</a></li>
-              <li class="arrows"><a class="sorting-link arrow" href=""><img width="11" height="10" src="img/svg/icon-up-dir.svg"
-                    alt="Отсортировать по убыванию"></a></li>
+              <li class="arrows"><a class="sorting-link arrow" href=""><img width="11" height="10"
+                    src="img/svg/icon-up-dir.svg" alt="Отсортировать по убыванию"></a></li>
               <li class="arrow-item"><a class="sorting-link arrow active-arrow" href=""><img width="11" height="10"
                     src="img/svg/icon-down-dir.svg" alt="Отсортировать по возрастанию"></a></li>
             </ul>
@@ -147,13 +147,12 @@
             <li>
               <div class="item-img-box">
                 <div class="item-img-link">
-                  <button class="button button-basket" type="button">В корзину</button>
+                  <a class="button button-basket" type="button">В корзину</a>
                   <a class="compare" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-image" src="img/product/item-1.jpg" alt="Любительская селфи-палка" width="360"
                   height="380">
               </div>
-
               <div class="item-price-box">
                 <h3 class="item-title"><a class="item-link" href="product.html">Любительская селфи-палка</a></h3>
                 <p class="price">500 руб.</p>
@@ -162,21 +161,21 @@
             <li>
               <div class="item-img-box">
                 <div class="item-img-link">
-                  <button class="button button-basket" type="button">В корзину</button>
+                  <a class="button button-basket" type="button">В корзину</a>
                   <a class="compare" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-image" src="img/product/item-2.jpg" alt="Профессиональная селфи-палка" width="360"
                   height="380">
               </div>
               <div class="item-price-box">
-                <h3 class="item-title"><a class="item-link" href="product.html">Профессиональная селфи-палка</a></h3>
+                <h3 class="item-title"><a class="item-link" href="product.html">Профессиональная<br>селфи-палка</a></h3>
                 <p class="price">1 500 руб.</p>
               </div>
             </li>
             <li>
               <div class="item-img-box">
                 <div class="item-img-link">
-                  <button class="button button-basket" type="button">В корзину</button>
+                  <a class="button button-basket" type="button">В корзину</a>
                   <a class="compare" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-image" src="img/product/item-3.jpg" alt="Непотопляемая селфи-палка" width="360"
@@ -190,7 +189,7 @@
             <li>
               <div class="item-img-box new">
                 <div class="item-img-link">
-                  <button class="button button-basket" type="button">В корзину</button>
+                  <a class="button button-basket" type="button">В корзину</a>
                   <a class="compare" href="#">Добавить к сравнению</a>
                 </div>
                 <img class="item-image" src="img/product/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360"
@@ -223,7 +222,7 @@
   </main>
   <footer class="footer">
     <div class="wrapper footer-grid">
-      <a class="logo-footer" title="Логотип магазина Device" href="/">
+      <a class="logo-footer" title="Логотип магазина Device" href="index.html">
         <svg width="164" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 164 35">
           <path fill="#F0C52E"
             d="m0.35 0.7v33.6h13.532a15.723 15.723 0 0 0 11.72-4.824 16.464 16.464 0 0 0 4.712-11.976 16.465 16.465 0 0 0-4.712-11.976 15.723 15.723 0 0 0-11.72-4.824zm7.733 26.208v-18.819h5.8a8.648 8.648 0 0 1 6.5 2.568 9.412 9.412 0 0 1 2.489 6.84 9.41 9.41 0 0 1-2.489 6.84 8.646 8.646 0 0 1-6.5 2.568h-5.8zm34.8-5.952h12.082v-7.3h-12.086v-5.567h13.291v-7.389h-21.024v33.6h21.265v-7.392h-13.532v-5.952zm36.343 13.344 11.019-33.6h-8.458l-7.491 24.72-7.491-24.72h-8.457l11.019 33.6zm14.4 0h7.733v-33.6h-7.733zm38.615-1.416a15.514 15.514 0 0 0 6.041-5.688l-6.67-3.84a7.488 7.488 0 0 1-3.165 3.024 9.874 9.874 0 0 1-4.664 1.1 9.594 9.594 0 0 1-7.177-2.736 9.907 9.907 0 0 1-2.682-7.248 9.908 9.908 0 0 1 2.682-7.248 9.594 9.594 0 0 1 7.177-2.736 9.914 9.914 0 0 1 4.64 1.08 7.6 7.6 0 0 1 3.189 3.048l6.67-3.84a15.881 15.881 0 0 0-6.09-5.688 17.419 17.419 0 0 0-8.409-2.088 17.12 17.12 0 0 0-17.592 17.472 17.12 17.12 0 0 0 17.589 17.476 17.519 17.519 0 0 0 8.458-2.088zm17.881-11.928h12.082v-7.3h-12.085v-5.567h13.29v-7.389h-21.022v33.6h21.264v-7.392h-13.532v-5.952z" />
@@ -249,14 +248,17 @@
       <section>
         <h2 class="visually-hidden">Подписывайтейсь на наши группы в социальных сетях</h2>
         <ul class="socials">
-          <li><a class="social-link" href="#"><img width="32" height="32" src="img/svg/fb.svg" alt="Наша страница на Facebook"></a></li>
+          <li><a class="social-link" href="#"><img width="32" height="32" src="img/svg/fb.svg"
+                alt="Наша страница на Facebook"></a></li>
           <li class="instagram"><a class="social-link" href="#"><img width="32" height="32" src="img/svg/instagram.svg"
                 alt="Наша страница в Instagram"></a></li>
-          <li><a class="social-link" href="#"><img width="32" height="32" src="img/svg/twitter.svg" alt="Наша страница в Twitter"></a></li>
+          <li><a class="social-link" href="#"><img width="32" height="32" src="img/svg/twitter.svg"
+                alt="Наша страница в Twitter"></a></li>
         </ul>
       </section>
       <div class="html-logo">
-        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img width="27" height="34" src="img/svg/logo-html.svg" alt="Онлайн‑курс
+        <a class="htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss"><img width="27" height="34"
+            src="img/svg/logo-html.svg" alt="Онлайн‑курс
           HTML и CSS. Профессиональная вёрстка сайтов"></a>
       </div>
     </div>
